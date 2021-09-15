@@ -32,3 +32,4 @@ Werkzeug==2.0.1
 psycopg2==2.9.1
 psycopg2-pool==1.1 
 firebase-admin==5.0.2
+fsspec==2021.8.1
