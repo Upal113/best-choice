@@ -5,7 +5,6 @@ from firebase_admin import credentials, initialize_app, storage, db
 import tempfile
 import requests
 import urllib3
-import pandas as pd
 import json
 import fsspec
 
