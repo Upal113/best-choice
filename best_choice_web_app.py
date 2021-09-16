@@ -59,7 +59,8 @@ def product_details(product_id):
     product_des = product_dict[product_id]['Product Description']
     img_url = product_dict[product_id]['Image Url']
     fb_url = product_dict[product_id]['Facebook Link']
-    return render_template('view-product.html', product_name= product_name, product_des=product_des,img_url=img_url, fb_url = fb_url)
+    product_price = product_name = product_dict[product_id]['Product Price']
+    return render_template('view-product.html', product_name= product_name, product_des=product_des,img_url=img_url, fb_url = fb_url, product_price=product_price)
 
 @app.route('/')
 def all_products():
